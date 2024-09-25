@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10004U.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@1,300&family=Shippori+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+      <!-- navigationBar -->
+    <div class="header">
+      <nav>
+        <ul>
+          <li><div class="logoimg"><img src="images/logo.jpg" alt="" height="50" width="50"  style="margin: 0px 10px 50px 2px"></div></li>
+          <li>
+            <!-- <div id="img"></div> -->
+            <div id="searchbar" onclick="expand()" >
+              <i class="fab fa-searchengin"></i
+              ><input
+                type="text"
+                placeholder="Search for a Service"
+                id="input"
+                maxlength="50"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-card"></i>About</a>
+          </li>
+          <li>
+            <a href="contactus.html"><i class="fas fa-users"></i>Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="info">
+      <h1><span class="autotyped"></h1>
+    </div>
+    <!-- Cards -->
+    <br />
+    <h3 class="consCard">Construction and Maintenance Services</h3>
+    <br />
+    <div class="nextHeader">
+      <div>
+        <img src="images/Plumbing/plumbling.svg" alt="" />
+        <h5>Plumbling</h5>
+      </div>
+      <div>
+        <img src="images/Electricals/electrical.svg" alt="" />
+        <h5>Electricals</h5>
+      </div>
+      <div>
+        <img src="images/Carpenting/carpentry.svg" alt="" />
+        <h5>Carpentry</h5>
+      </div>
+      <div>
+        <img src="images/Ro/ro.png" alt="" />
+        <h5>Ro installation</h6>
+      </div>
+      <div>
+        <img src="images/Painting/painting.png" alt="" />
+        <h5>HousePainting</h6>
+      </div>
+    </div>
+    <!-- detailAboutCards -->
+    <h2>Plumbing Works</h2>
+    <div class="button">
+     <div class="whole">
+        <div class="row">
+            <div class="main"><img src="images/plumbingmain-removebg-preview.png" alt=""></div>
+            <div class="sub">
+                <div class="subtosub" id="slide">
+                  <div class="child"><h3>10004U</h3></div>
+                    <img src="images/Plumbing/washbasinrepair.jpg" alt="">
+                </div>
+                <div class="subtosub">
+                  <div class="child"><h3>10004U</h3></div>
+                    <img src="images/Plumbing/LeakingWater.jpg" alt="">
+                </div>
+                <div class="subtosub">
+                  <div class="child"><h3>10004U</h3></div>
+                    <img src="images/Plumbing/toiletrepair.jpg" alt="">
+                </div>
+                <div class="subtosub">
+                  <div class="child"><h3>10004U</h3></div>
+                    <img src="images/Plumbing/kitchenrepair.jpg" alt="">
+                </div>
+                <div class="subtosub" id="viewAllPlumb" onclick="shrinkPlumb()">
+                   <img src="images/view.png" alt="" >
+                </div>
+             </div>
+        </div>
+    </div>
+     <div class="swipe"></div>
+    </div>
+    <h2>Electric Works</h2>
+    <div class="button">
+      <div class="whole">
+        <div class="row">
+            <div class="main"><img src="images/electricalmain-removebg-preview.png" alt=""></div>
+            <div class="sub"> <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Electricals/FanInstallation.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Electricals/installation.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Electricals/wireConnection.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Electricals/BulbReplacement.jpg" alt="">
+            </div>
+            <div class="subtosub" id="viewAllElect" onclick="shrinkElect()">
+              <img src="images/view.png" alt="" >
+           </div></div>
+        </div>
+    </div>
+      <div class="swipe"></div>
+    </div>
+    <h2>Carpenting Works</h2>
+    <div class="button">
+      <div class="whole">
+        <div class="row">
+            <div class="main"><img src="images/carpentrymain-removebg-preview.png" alt=""></div>
+            <div class="sub"> <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Carpenting/interiorWork.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Carpenting/WoodCarpenting.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Carpenting/DoorRepairing.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Carpenting/DoorCarpenting.jpg" alt="">
+            </div>
+            <div class="subtosub" id="viewAllCarp" onclick="shrinkCarp()">
+              <img src="images/view.png" alt="" >
+           </div></div>
+        </div>
+    </div>
+      <div class="swipe"></div>
+    </div>
+    <h2>Ro Installations</h2>
+    <div class="button">
+      <div class="whole">
+        <div class="row">
+            <div class="main"><img src="images/romain-removebg-preview.png" alt=""></div>
+            <div class="sub"> <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Ro/FilterCleaning.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/RO/installing.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/RO/Repairing.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/RO/Connection.jpg" alt="">
+            </div>
+            <div class="subtosub" id="viewAllRo" onclick="shrinkRo() ">
+              <img src="images/view.png" alt="" >
+           </div></div>
+        </div>
+    </div>
+      <div class="swipe"></div>
+    </div>
+    <h2>Painting Works</h2>
+    <div class="button">
+      <div class="whole">
+        <div class="row">
+            <div class="main"><img src="images/paintingmain-removebg-preview.png" alt=""></div>
+            <div class="sub"> <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Painting/decarator.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Painting/decors.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Painting/exterior.jpg" alt="">
+            </div>
+            <div class="subtosub">
+              <div class="child"><h3>10004U</h3></div>
+                <img src="images/Painting/interior.jpg" alt="">
+            </div>
+            <div class="subtosub" id="viewAllPaint" onclick="shrinkPaint()">
+              <img src="images/view.png" alt="" >
+           </div></div>
+        </div>
+    </div>
+      <div class="swipe"></div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footone">
+        <nav>
+          <ul>
+            <li>Copyright © 10004U</li>
+            <li>privacy</li>
+            <li>Terms of use</li>
+            <li>Faq</li>
+          </ul>
+        </nav>
+        <nav class="foot">
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- footer downloadButton -->
+      <div class="downloadsection">
+        <h5>DOWNLOAD 10004U APP</h5>
+        <img src="images/download.png" alt="google" />
+        <img src="images/download (1).png" alt="appstore" />
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <!-- AutoTypeFunction -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".autotyped", {
+        strings: [
+          "Best Home Service Platform",
+          "Get Everything Done At One Place"
+        ],
+        backSpeed: 50,
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

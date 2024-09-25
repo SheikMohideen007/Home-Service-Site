@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contactus.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@1,300&family=Shippori+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navigationBar -->
+    <div class="header">
+      <nav>
+        <ul>
+          <li>Logo</li>
+          <li>
+            <div id="searchbar" onclick="expand()">
+              <i class="fab fa-searchengin"></i
+              ><input
+                type="text"
+                placeholder="Search for a Service"
+                id="input"
+                maxlength="50"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-address-card"></i>About</a>
+          </li>
+          <li>
+            <a href="contactus.html"><i class="fas fa-users"></i>Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- contactus -->
+    <div class="contactheader">
+      <h1>Contact Us</h1>
+    </div>
+    <br />
+    <!-- Cards -->
+    <div class="row">
+      <div class="col">
+        <ul>
+          <li><i class="fas fa-phone"></i></li>
+          <li>Call Us</li>
+          <li>+91 94458 83007</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><i class="fas fa-mail-bulk"></i></li>
+          <li>Email</li>
+          <li>r.prabhuome2@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li><i class="fas fa-location-pin"></i></li>
+          <li>Location</li>
+          <li>
+            No 11 A, Shaikpet Street, Kanchipuram HO, Kanchipuram - 631501, Near
+            Professional Couriers
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Gmap -->
+    <h3 style="padding: 100px 0px 50px 130px">
+      Here is the route. . . . . . . . .
+    </h3>
+    <div>
+      <iframe
+        class="gmap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1708408100812!2d79.70292751404209!3d12.832234521394888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c3dfd5673af1%3A0x43aac2ea88b83ca7!2som%20muruga%20electricals!5e0!3m2!1sen!2sin!4v1641049552202!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <!-- QueriesForm -->
+    <div class="queries">
+      <div class="formbox">
+        <form action="" method="post">
+          <label
+            >Enter Your Name: <br /><input
+              type="text"
+              name="name"
+              required /></label
+          ><br />
+          <label
+            >Enter your EmailAddress: <br /><input
+              type="email"
+              name="email"
+              required /></label
+          ><br />
+          <label
+            >Enter your Queries: <br /><textarea
+              placeholder="Message here..."
+            ></textarea></label
+          ><br />
+          <input type="submit" name="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footone">
+        <nav>
+          <ul>
+            <li>Copyright © 10004U</li>
+            <li>privacy</li>
+            <li>Terms of use</li>
+            <li>Faq</li>
+          </ul>
+        </nav>
+        <nav class="foot">
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- footer downloadButton -->
+      <div class="downloadsection">
+        <h5>DOWNLOAD 10004U APP</h5>
+        <img src="images/download.png" alt="google" />
+        <img src="images/download (1).png" alt="appstore" />
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

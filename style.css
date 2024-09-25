@@ -1,0 +1,324 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  background-color: aliceblue;
+}
+/* navigationBar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 204, 255);
+  padding: 10px 0 0 10px;
+  height: 70px;
+}
+.header nav ul {
+  padding-top: 15px;
+  display: flex;
+  list-style-type: none;
+}
+.header ul li {
+  padding: 5px 20px 0px 90px;
+  /* color: white; */
+}
+.header nav ul a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.header nav ul a:hover {
+  color: black;
+  transition: 0.5s;
+}
+.header nav ul a i {
+  padding-right: 10px;
+}
+/* navigationSearchBar */
+#searchbar i {
+  padding-right: 10px;
+  font-size: 17px;
+}
+#searchbar i:hover {
+  cursor: pointer;
+}
+#searchbar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+#searchbar input[type="text"] {
+  width: 200px;
+  position: absolute;
+}
+#searchbar ::placeholder {
+  font-size: 15px;
+  text-align: left;
+}
+.header #searchbar {
+  border-radius: 25px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  width: 230px;
+  height: 20px;
+  position: relative;
+}
+/* Info Autotype function */
+.info {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  /* color: rgb(0, 204, 255); */
+  text-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+}
+/* cards */
+.consCard {
+  padding-left: 100px;
+  margin-top: 30px;
+}
+.nextHeader {
+  /* background-color: rgb(0, 204, 255); */
+  /* height: 100px; */
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+.nextHeader img {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.nextHeader div {
+  border-radius: 25px;
+  /* border: 1px solid black; */
+  padding: 25px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.nextHeader h5 {
+  padding-left: 20px;
+}
+.nextHeader div:hover {
+  box-shadow: rgb(0, 0, 0, 0.4) 2px 1px 1px 4px;
+  border: none;
+}
+/* detailAboutCards */
+h2 {
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.whole {
+  height: 250px;
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 7%;
+  margin-right: 1%;
+  border: 2px solid rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 100px;
+  transition: 0.7s;
+}
+.whole:hover {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+.row {
+  display: flex;
+}
+.main {
+  height: 250px;
+  width: 25%;
+  /* border-right: 1px solid black; */
+}
+.main img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+.sub {
+  height: 250px;
+  width: 75%;
+  display: flex;
+  overflow-x: scroll;
+  /* display: grid; */
+  overflow-y: hidden;
+}
+.subtosub img {
+  height: 250px;
+  width: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.subtosub {
+  margin-left: 15px;
+  position: relative;
+}
+/* popUPName */
+.child {
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: transparent;
+  height: 100%;
+  width: 260px;
+  /* overflow: hidden; */
+}
+.child h3 {
+  width: 100%;
+  bottom: 0;
+  left: 40%;
+  opacity: 0;
+  /* transform: translateX(-0%); */
+  transition: 0.5s;
+  position: absolute;
+}
+.child:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+.child:hover {
+  position: absolute;
+  background-color: rgb(0, 204, 255, 0.5);
+}
+/* next&backButtonCustomization */
+.button {
+  display: flex;
+}
+.swipe {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.swipe {
+  margin: 130px 0 0 40px;
+  height: 30px;
+  width: 50px;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+}
+/* animationCode */
+.swipe::before,
+.swipe::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+  border-left: transparent;
+  border-bottom: transparent;
+  animation: scrollright 1s ease-in-out infinite;
+}
+.swipe::after {
+  left: 90%;
+  animation-delay: 0.3s;
+}
+@keyframes scrollright {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    left: 91%;
+  }
+  100% {
+    opacity: 0;
+    left: 92%;
+  }
+}
+/* scrollbarCustomization */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+.subtosub img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-left: 5px; */
+}
+.subtosub {
+  height: 250px;
+  width: 260px;
+  display: flex;
+  /* margin-left: 10px; */
+  /* border-radius: 25px; */
+}
+/* .subtosub:nth-child(5) {
+  transition: 0.7s;
+} */
+.subtosub:nth-child(5):hover {
+  z-index: 1;
+}
+/* footer */
+.footone {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 204, 255);
+  height: 100px;
+  color: aliceblue;
+}
+.footone ul li {
+  display: inline-block;
+  padding: 20px 25px 0px 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footone ul li:hover {
+  color: black;
+  transition: 0.7s;
+}
+.foot ul a {
+  text-decoration: none;
+  color: black;
+}
+.foot ul li:hover {
+  transition: 0.7s;
+  cursor: pointer;
+  transform: scale(1.4) rotate(360deg);
+}
+/* footer Buttons */
+.downloadsection {
+  background-color: rgb(0, 204, 255);
+  color: aliceblue;
+  padding: 15px;
+}
+.downloadsection h5 {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+.downloadsection img {
+  padding-left: 25px;
+}
+.downloadsection img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
